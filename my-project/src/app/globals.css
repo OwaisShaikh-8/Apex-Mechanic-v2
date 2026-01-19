@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #2C64DE;
+  --color-para:#666666;
+  --color-border:#E6E6E6; 
+  --bg-chips:#F1F1F1; 
+}
+
+body {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.container{
+  max-width: 1320px;
+  width: 100%;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
