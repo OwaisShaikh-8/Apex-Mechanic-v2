@@ -2,6 +2,7 @@
 
 :root {
   --color-primary: #2C64DE;
+  --color-hover-primary:#014184;
   --color-para:#666666;
   --color-border:#E6E6E6; 
   --bg-chips:#F1F1F1; 
@@ -16,4 +17,25 @@ body {
   width: 100%;
   padding-inline: 15px;
   margin-inline: auto;
+}
+
+.hero-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  background-image: url("../assets/images/hero-bg.webp");
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  z-index: 0; /* behind content */
+}
+
+.hero-bg > * {
+  position: relative;
+  z-index: 1; /* ensure children appear above background */
 }

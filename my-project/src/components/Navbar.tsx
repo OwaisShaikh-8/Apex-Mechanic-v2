@@ -5,9 +5,9 @@ const Navbar = () => {
   return (
     <>
       <header className="border-b border-(--color-border)">
-        <nav className="border-x flex justify-between items-center border-(--color-border) container px-[40px] py-[16px]">
+        <nav className="border-x flex justify-between items-center border-(--color-border) container !px-[40px] py-[16px]">
           <span className="flex gap-15">
-            <figure className="flex gap-1.5 text-[16px] leading-[95%] tracking-[0%] font-semibold text-black items-center">
+            <figure className="flex gap-1.5 text-[16px] leading-none tracking-[0%] font-semibold text-black items-center tracking-tighter">
               <Image alt="logo" src={logo} width={32} height={32}/>
               Apex <br /> Mechanic
             </figure>
@@ -53,8 +53,8 @@ const Navbar = () => {
           </span>
           <span className="flex gap-[8px] text-[14px] leading-[140%] tracking-[-3%] " >
             <button className="px-4 font-medium  text-(--color-para)  border-none outline-none cursor-pointer transition-all duration-300 hover:scale-105 ">Login</button>
-            <button className="rounded-[50px] border border-(--color-border) font-semibold text-black transition-all duration-300  px-[16px] py-[8px] cursor-pointer hover:bg-(--color-primary) hover:text-white">Contact us</button>
-            <button className="rounded-[50px] bg-(--color-primary)  text-white font-semibold transition-all duration-300 px-[16px] py-[8px] cursor-pointer ">Get Started</button>
+            <button className="rounded-[50px] border border-(--color-border) font-semibold text-black transition-all duration-300  px-[16px] py-[8px] cursor-pointer hover:bg-(--bg-chips)">Contact us</button>
+            <button className="rounded-[50px] bg-(--color-primary) hover:bg-(--color-hover-primary) text-white font-semibold transition-all duration-300 px-[16px] py-[8px] cursor-pointer ">Get Started</button>
           </span>
         </nav>
       </header>
