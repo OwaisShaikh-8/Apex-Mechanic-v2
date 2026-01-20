@@ -470,7 +470,11 @@ export default function Home() {
             />
           </div>
         </section>
+
+        {/* This marque will be adjust  */}
         <BrandsMarque />
+        {/* This marque will be adjust  */}
+
         <section className="container border-x border-(--color-border) py-[100px] !px-[40px] flex flex-col gap-[30px]">
           <div className="text-center flex flex-col gap-[16px]">
             <span className="flex gap-[4px] bg-(--bg-chips) p-[8px] mx-auto w-fit">

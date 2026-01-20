@@ -5,7 +5,7 @@ import React from "react";
 import img from "@/assets/images/Step1img.webp"
 const StepsCard = () => {
   return (
-    <div className="group border border-(--color-border) max-w-[393px] w-full relative cursor-pointer">
+    <div className="group border border-(--color-border) max-w-[393px] w-full relative cursor-pointer hover:rotate-5 transition-transform duration-300">
       <span className="group-hover:bg-(--color-primary) group-hover:text-cyan-50 px-[12px] py-[8px] text-[14px] leading-tight tracking-tight transition-all duration-300 absolute border-r border-b border-(--color-border)">
         Step 1
       </span>
