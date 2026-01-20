@@ -1,11 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
-
-const StepsCard = ({number}) => {
+import img from "@/assets/images/Step1img.webp"
+const StepsCard = () => {
   return (
-    <div className="group border border-(--color-border) max-w-[393px] w-full relative  ">
-      <span className="group-hover:bg-(--color-primary) group-hover:text-cyan-50 px-[12px] py-[8px] text-[14px] leading-tight tracking-tight transition-all duration-300 absolute ">
+    <div className="group border border-(--color-border) max-w-[393px] w-full relative cursor-pointer">
+      <span className="group-hover:bg-(--color-primary) group-hover:text-cyan-50 px-[12px] py-[8px] text-[14px] leading-tight tracking-tight transition-all duration-300 absolute border-r border-b border-(--color-border)">
         Step 1
       </span>
 
@@ -19,11 +20,12 @@ const StepsCard = ({number}) => {
           Figma is a powerful design tool that allows you to create and manage
           component variants with ease. You can resize.
         </p>
-        <div>
-          <span>Book Appointment</span>
+        <div className="flex gap-[8px] flex-wrap">
+          <span className="py-[4px] px-[6px] rounded-[8px] bg-[#F1F1F1] text-black font-medium text-[14px] leading-none tracking-tight ">Book Appointment</span>
+     
         </div>
       </div>
-      <div></div>
+        
     </div>
   );
 };
